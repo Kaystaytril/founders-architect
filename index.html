@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Founder's Architect</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Serif:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <img src="fa-logo.png" alt="The Founder's Architect">
+    <span>The Founder's Architect</span>
+  </a>
+  <nav class="site-nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="financial-architecture.html">Financial</a>
+    <a href="business-architecture.html">Business</a>
+    <a href="founder-architecture.html">Founder</a>
+    <a href="contact.html">Connect</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <img class="seal" src="fa-logo.png" alt="">
+    <h1>Every empire needs its architect.</h1>
+    <div class="dim-line">
+      <span class="tick"></span><span class="seg"></span>
+      <span class="label">Strategic Advisory — Tax &amp; Compliance — Financial Architecture</span>
+      <span class="seg"></span><span class="tick"></span>
+    </div>
+    <a class="hero-cta" href="contact.html">Book a Strategy Session</a>
+  </div>
+</section>
+
+<section class="pillars">
+  <div class="wrap">
+    <div class="pillars-grid">
+
+      <div class="pillar reveal">
+        <svg viewBox="0 0 100 100" fill="none" stroke="#c8a468" stroke-width="1.1">
+          <line x1="30" y1="10" x2="30" y2="82"/>
+          <line x1="70" y1="10" x2="70" y2="82"/>
+          <rect x="18" y="4" width="64" height="8"/>
+          <rect x="18" y="82" width="64" height="8"/>
+          <line x1="30" y1="26" x2="70" y2="26" stroke-dasharray="3 3" opacity=".5"/>
+          <line x1="30" y1="50" x2="70" y2="50" stroke-dasharray="3 3" opacity=".5"/>
+        </svg>
+        <span class="eyebrow">01 — The Structure</span>
+        <h3>Financial Architecture</h3>
+        <p>Compliance and reporting, built like load-bearing structure — the foundation everything else stands on.</p>
+        <a href="financial-architecture.html">View the drawings →</a>
+      </div>
+
+      <div class="pillar reveal">
+        <svg viewBox="0 0 100 100" fill="none" stroke="#c8a468" stroke-width="1.1">
+          <rect x="16" y="18" width="68" height="14"/>
+          <rect x="16" y="36" width="68" height="14"/>
+          <rect x="16" y="54" width="68" height="14"/>
+          <line x1="24" y1="25" x2="70" y2="25" opacity=".5"/>
+          <line x1="24" y1="43" x2="70" y2="43" opacity=".5"/>
+          <line x1="24" y1="61" x2="70" y2="61" opacity=".5"/>
+        </svg>
+        <span class="eyebrow">02 — The Ledger</span>
+        <h3>Business Architecture</h3>
+        <p>Retainer tiers kept the way a ledger keeps accounts — one line per commitment, nothing left to guesswork.</p>
+        <a href="business-architecture.html">Open the ledger →</a>
+      </div>
+
+      <div class="pillar reveal">
+        <svg viewBox="0 0 100 100" fill="none" stroke="#c8a468" stroke-width="1.1">
+          <circle cx="50" cy="24" r="4"/>
+          <line x1="50" y1="28" x2="34" y2="80"/>
+          <line x1="50" y1="28" x2="66" y2="80"/>
+          <line x1="40" y1="58" x2="60" y2="58"/>
+        </svg>
+        <span class="eyebrow">03 — The Founder</span>
+        <h3>Founder Architecture</h3>
+        <p>An empire needs someone still standing at the end of it. Coaching and recovery, for the person building it.</p>
+        <a href="founder-architecture.html">Read further →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="quote-strip reveal">
+  <div class="wrap">
+    <blockquote>"Your financial foundation is not paperwork — it's the structure everything else is built on."</blockquote>
+    <cite>Magdalene van der Walt — Founder</cite>
+  </div>
+</section>
+
+<section class="credentials reveal">
+  <div class="wrap">
+    <div class="credentials-row">
+      <div class="credential-cell">
+        <span class="fig">2×</span>
+        <span class="lbl">Global Bookkeeping Firm of the Year</span>
+      </div>
+      <div class="credential-cell">
+        <span class="fig">Sage</span>
+        <span class="lbl">Authorised Accountants &amp; Advisors</span>
+      </div>
+      <div class="credential-cell">
+        <span class="fig">KZN</span>
+        <span class="lbl">Top Business Women, Founder Featured</span>
+      </div>
+      <div class="credential-cell">
+        <span class="fig">Durban</span>
+        <span class="lbl">Serving founders nationally</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>The Founder's Architect · Strategic Advisory · Tax &amp; Compliance · Financial Architecture</p>
+</footer>
+
+<script>
+const io = new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in'); io.unobserve(e.target);}}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
