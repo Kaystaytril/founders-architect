@@ -1,181 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Founder's Architect — Financial, Business &amp; Founder Architecture</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Founders Architect | Financial Architecture & Advisory</title>
+  <meta name="description" content="Founders Architect is a boutique financial architecture and advisory firm in Durban, delivering tax strategy, financial structure, operational clarity and founder support.">
+  <link rel="icon" href="assets/founders-architect-mark.png">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<canvas id="ambient-plan" aria-hidden="true"></canvas>
+<div class="bg-notation" aria-hidden="true"><span>structure / 01</span><span>tax / 02</span><span>ledger / 03</span><span>founder / 04</span></div>
+<div class="cursor-light" aria-hidden="true"></div><a class="whatsapp-float" href="https://wa.me/27628848362?text=Hello%20Founders%20Architect%2C%20I%27d%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" aria-label="Chat with Founders Architect on WhatsApp">WhatsApp</a>
 
-<header class="site-header">
-  <a class="brand" href="index.html">
-    <img src="fa-logo.png" alt="The Founder's Architect">
-    <span>The Founder's Architect</span>
-  </a>
-  <nav class="site-nav">
-    <a href="index.html" class="active">Home</a>
-    <a href="financial-architecture.html">Financial</a>
-    <a href="business-architecture.html">Business</a>
-    <a href="founder-architecture.html">Founder</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <div class="nav-cta">
-    <a class="btn btn-ghost" href="mailto:connect@thefoundersarchitect.com">Email us</a>
-    <a class="btn btn-primary" href="contact.html">Book a consult</a>
+<header class="site-nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html"><img src="assets/founders-architect-mark.png" alt="Founders Architect monogram"><span class="brand-name">Founders Architect</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="architecture.html">Architecture</a>
+      <a href="partners.html">Partners</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </div>
 </header>
 
-<section class="hero">
-  <span class="eyebrow">Durban, South Africa</span>
-  <h1>Every empire needs its architect.</h1>
-  <p class="lede">Strategic advisory, tax &amp; compliance, and financial architecture for founders who'd rather build the business than manage the paperwork.</p>
-  <div class="hero-ctas">
-    <a class="btn btn-primary" href="contact.html">Book a free consult</a>
-    <a class="btn btn-ghost" href="mailto:connect@thefoundersarchitect.com">Email us</a>
-  </div>
-  <div class="badge-row">
-    <span class="badge">Sage Authorised</span>
-    <span class="badge">2× Bookkeeping Firm of the Year</span>
-    <span class="badge">Cloud-based books</span>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">What we do</span>
-      <h2>Three pillars, one practice.</h2>
-      <p>Everything a founder needs to stay compliant, organised, and standing at the end of it.</p>
-    </div>
-    <div class="card-grid">
-      <a class="card reveal" href="financial-architecture.html" style="text-decoration:none; display:block;">
-        <svg class="icon" viewBox="0 0 42 42" fill="none" stroke="#b3904f" stroke-width="1.6"><rect x="10" y="6" width="22" height="30" rx="3"/><line x1="15" y1="14" x2="27" y2="14"/><line x1="15" y1="20" x2="27" y2="20"/><line x1="15" y1="26" x2="22" y2="26"/></svg>
-        <h3>Financial Architecture</h3>
-        <p>Bookkeeping, tax, secretarial, payroll and labour compliance — the structural work behind every business.</p>
-      </a>
-      <a class="card reveal" href="business-architecture.html" style="text-decoration:none; display:block;">
-        <svg class="icon" viewBox="0 0 42 42" fill="none" stroke="#b3904f" stroke-width="1.6"><rect x="6" y="10" width="30" height="8" rx="2"/><rect x="6" y="22" width="30" height="8" rx="2"/></svg>
-        <h3>Business Architecture</h3>
-        <p>Monthly retainer tiers, from first registration to established enterprise — built for where you stand today.</p>
-      </a>
-      <a class="card reveal" href="founder-architecture.html" style="text-decoration:none; display:block;">
-        <svg class="icon" viewBox="0 0 42 42" fill="none" stroke="#b3904f" stroke-width="1.6"><circle cx="21" cy="11" r="3.4"/><line x1="21" y1="15" x2="13" y2="33"/><line x1="21" y1="15" x2="29" y2="33"/><line x1="16" y1="25" x2="26" y2="25"/></svg>
-        <h3>Founder Architecture</h3>
-        <p>Coaching and recovery for the person building the business — because an empire needs someone still standing.</p>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="section section-alt">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Why The Founder's Architect</span>
-      <h2>Built for founders, not corporates.</h2>
-    </div>
-    <div class="numbered-grid">
-      <div class="numbered-item reveal">
-        <div class="num">1</div>
-        <h4>One point of contact</h4>
-        <p>You deal directly with Magdalene — no call centres, no handoffs between departments.</p>
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="reveal">
+        <div class="eyebrow mono">Strategic advisory · tax & compliance · financial architecture</div>
+        <h1>Every Empire<br><em>Needs Its Architect.</em></h1>
+        <p class="lede">Founders Architect is a boutique financial architecture and advisory firm. We work with a select number of aligned founders — delivering tax strategy, financial structure and operational clarity with disciplined precision.</p>
+        <div class="hero-actions">
+          <a class="btn brass" href="https://wa.me/27628848362?text=Hello%20Founders%20Architect%2C%20I%27d%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener">WhatsApp the practice ↗</a>
+          <a class="btn" href="services.html">Explore the architecture</a>
+        </div>
       </div>
-      <div class="numbered-item reveal">
-        <div class="num">2</div>
-        <h4>Cloud-based, always visible</h4>
-        <p>Your books live in Sage Business Cloud, so you can see exactly where things stand, any time.</p>
+      <aside class="hero-plaque reveal" aria-label="Founders Architect philosophy">
+        <img class="plaque-mark" src="assets/founders-architect-mark.png" alt="">
+        <blockquote>Build the structure.<br><span>Refine the founder.</span></blockquote>
+        <div class="mono muted">Sustainable success is intentionally designed.</div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section-rule">
+    <div class="container">
+      <div class="section-head reveal">
+        <div><div class="kicker mono">The practice</div><h2>Financial structure for founders who intend to build well.</h2></div>
+        <p>Founders Architect brings together business finance, tax, statutory administration, payroll, labour compliance and founder support. The aim is not simply to process what already happened — it is to build a clearer operating structure around what comes next.</p>
       </div>
-      <div class="numbered-item reveal">
-        <div class="num">3</div>
-        <h4>Durban based, national reach</h4>
-        <p>Rooted in Durban and easy to reach — serving founders across South Africa.</p>
+      <div class="pillars stagger">
+        <article class="pillar"><div class="num">01 / FIN</div><h3>Financial</h3><p>Financial architecture, ledgers and a clearer view of the business behind the numbers.</p></article>
+        <article class="pillar"><div class="num">02 / TAX</div><h3>Tax</h3><p>Tax architecture designed around preparation, compliance and fewer surprises.</p></article>
+        <article class="pillar"><div class="num">03 / SEC</div><h3>Secretarial</h3><p>Company compliance and statutory structure kept deliberate and in order.</p></article>
+        <article class="pillar"><div class="num">04 / PAY</div><h3>Payroll & Labour</h3><p>Payroll administration and the labour-compliance layer around your team.</p></article>
+        <article class="pillar"><div class="num">05 / FDR</div><h3>Founder</h3><p>Coaching and reset work focused on clarity, confidence, direction and sustainable performance.</p></article>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">How it works</span>
-      <h2>Getting started is four steps.</h2>
-    </div>
-    <div class="steps-grid">
-      <div class="step reveal"><div class="step-num">01</div><h4>Free consult</h4><p>Tell us about the business and where the books currently stand.</p></div>
-      <div class="step reveal"><div class="step-num">02</div><h4>Set up your architecture</h4><p>We build or clean up your financial systems properly, from the foundation up.</p></div>
-      <div class="step reveal"><div class="step-num">03</div><h4>Monthly management</h4><p>Bookkeeping, payroll and compliance handled every month, on schedule.</p></div>
-      <div class="step reveal"><div class="step-num">04</div><h4>Tax season ready</h4><p>SARS submissions and tax obligations taken care of when they're due.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section section-alt">
-  <div class="wrap reveal">
-    <div class="stats-row" id="stats-row">
-      <div class="stat-cell"><span class="num" data-count="2">0</span><span class="lbl">Global Bookkeeping Firm of the Year</span></div>
-      <div class="stat-cell"><span class="num" data-static="Sage">—</span><span class="lbl">Authorised Accountants &amp; Advisors</span></div>
-      <div class="stat-cell"><span class="num" data-static="KZN">—</span><span class="lbl">Top Business Women, Founder Featured</span></div>
-      <div class="stat-cell"><span class="num" data-static="8">0</span><span class="lbl">Ledger Tiers, One For Every Stage</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="cta-band reveal">
-      <h2>Let's give your empire its architect.</h2>
-      <p>Book a free consult or send a message — no obligation, just a conversation about what your business needs.</p>
-      <div class="hero-ctas">
-        <a class="btn btn-primary" href="contact.html">Book a free consult</a>
-        <a class="btn btn-ghost" style="color:#e9ddbd; border-color:rgba(233,221,189,.35);" href="mailto:connect@thefoundersarchitect.com">Email us</a>
+  <section>
+    <div class="container split">
+      <div class="study-frame reveal">
+        <div class="photo-placeholder" aria-hidden="true"></div>
+      </div>
+      <div class="copy reveal">
+        <div class="kicker mono">Founder architecture</div>
+        <h2>The work extends beyond business.</h2>
+        <p>The work extends beyond the business itself. Founder Architecture also focuses on the clarity, confidence and direction of the leaders behind the companies it serves.</p>
+        <p>Founder Coaching is built around clarity, confidence and direction, with both once-off strategy sessions and ongoing monthly coaching available.</p>
+        <a class="btn" href="services.html#founder">Explore founder services ↗</a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<footer class="site-footer">
-  <div class="footer-grid">
-    <div>
-      <a class="brand" href="index.html"><img src="fa-logo.png" alt=""><span>The Founder's Architect</span></a>
-      <p>Strategic advisory, tax &amp; compliance and financial architecture for founders, run by Magdalene van der Walt.</p>
+  <section class="statement">
+    <div class="container reveal">
+      <p>Good financial work is not only about what gets filed. It is about the <em>architecture underneath the decisions.</em></p>
     </div>
-    <div class="footer-col">
-      <h4>Explore</h4>
-      <a href="index.html">Home</a>
-      <a href="financial-architecture.html">Financial</a>
-      <a href="business-architecture.html">Business</a>
-      <a href="founder-architecture.html">Founder</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <div><div class="kicker mono">Selected services</div><h2>Ledgers, architecture and advisory.</h2></div>
+        <p>Services range from monthly and annual ledger packages to payroll, tax, secretarial, labour and founder-focused advisory.</p>
+      </div>
+      <div class="service-grid stagger">
+        <a class="service-card" href="services.html#ledgers"><span class="arrow">↗</span><div class="label">Business Architecture</div><h3>The Ledger Collection</h3><p>The Essential, Executive, Professional, Foundation, Payroll, Tax and Secretarial ledgers.</p></a>
+        <a class="service-card" href="services.html#architecture-services"><span class="arrow">↗</span><div class="label">Core Architecture</div><h3>Financial, Tax & Compliance</h3><p>Financial Architecture, Tax Architecture, Secretarial Architecture, Payroll Architecture and Labour Architecture.</p></a>
+        <a class="service-card" href="services.html#founder"><span class="arrow">↗</span><div class="label">Founder Architecture</div><h3>Coaching & Reset</h3><p>Founder Coaching for clarity and direction, together with Founder Reset for more sustainable performance.</p></a>
+      </div>
     </div>
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <a href="mailto:connect@thefoundersarchitect.com">connect@thefoundersarchitect.com</a>
-      <a href="contact.html">Book a consult</a>
+  </section>
+
+  <section class="section-rule">
+    <div class="container split">
+      <div class="copy reveal">
+        <div class="kicker mono">Durban · South Africa</div>
+        <h2>By appointment. Selective by design.</h2>
+        <p>Founders Architect operates by appointment from Monday to Friday and is closed on weekends, from 17 Erskine Terrace, South Beach, Durban, 4001.</p>
+        <div class="hero-actions"><a class="btn brass" href="contact.html">Contact the practice ↗</a></div>
+      </div>
+      <div class="study-frame reveal"><div class="photo-placeholder wide" aria-hidden="true"></div></div>
     </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div><a class="brand" href="index.html"><img src="assets/founders-architect-mark.png" alt=""><span class="brand-name">Founders Architect</span></a><p>Boutique financial architecture and advisory for founders — tax strategy, financial structure, operational clarity and founder support.</p></div>
+    <div><div class="mono">Navigate</div><p><a href="about.html">About</a><br><a href="services.html">Services</a><br><a href="architecture.html">Architecture</a><br><a href="partners.html">Partners</a></p></div>
+    <div><div class="mono">Contact</div><p><a href="https://wa.me/27628848362?text=Hello%20Founders%20Architect%2C%20I%27d%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener">WhatsApp +27 62 884 8362</a><br><a href="mailto:connect@thefoundersarchitect.com">connect@thefoundersarchitect.com</a><br>17 Erskine Terrace<br>South Beach, Durban, 4001</p></div>
   </div>
-  <div class="bottom wrap">© The Founder's Architect. Durban, South Africa. Financial · Business · Founder Architecture</div>
+  <div class="container footer-bottom"><span>© 2026 Founders Architect</span><span>Sustainable success is intentionally designed.</span></div>
 </footer>
-
-<script>
-const io = new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in'); io.unobserve(e.target);}}),{threshold:.15});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-
-// animated stat counters
-const counters = document.querySelectorAll('.stat-cell .num[data-count]');
-const cio = new IntersectionObserver(es=>es.forEach(e=>{
-  if(e.isIntersecting){
-    const el = e.target, target = parseInt(el.dataset.count,10);
-    let cur = 0;
-    const step = ()=>{ cur++; el.textContent = cur + '×'; if(cur < target) requestAnimationFrame(step); };
-    step();
-    cio.unobserve(el);
-  }
-}),{threshold:.5});
-counters.forEach(el=>cio.observe(el));
-document.querySelectorAll('.stat-cell .num[data-static]').forEach(el=>{ el.textContent = el.dataset.static; });
-</script>
+<script src="assets/app.js"></script>
 </body>
 </html>
